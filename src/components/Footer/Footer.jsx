@@ -59,9 +59,9 @@ const Footer = () => {
             <div className="footer-copyright">
               <h5>Nrmlss</h5>
               <p className="bodyCopy">&copy;2025 All modules reserved.</p>
-              <p className="bodyCopy" id="copyright-text">
+              {/* <p className="bodyCopy" id="copyright-text">
                 Built by Codegrid
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

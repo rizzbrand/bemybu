@@ -164,7 +164,7 @@ export default function Index() {
 
       <TextBlock />
 
-      <PeelReveal />
+      {/* <PeelReveal /> */}
 
       <CTA />
     </>

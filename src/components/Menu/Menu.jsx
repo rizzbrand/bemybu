@@ -296,7 +296,7 @@ const Menu = () => {
   return (
     <nav className="menu" ref={menuRef}>
       <div className="menu-header" onClick={toggleMenu}>
-        <h4 className="menu-logo">Be My Bu</h4>
+        <h4 className="menu-logo">Be My Bu ❋</h4>
         <button className="menu-toggle" aria-label="Toggle menu">
           <div className="menu-hamburger-icon" ref={hamburgerRef}>
             <span className="menu-item"></span>
