@@ -1,6 +1,6 @@
 import "./MarqueeBanner.css";
 import { useRef } from "react";
-
+import Image from "next/image";
 import Copy from "../Copy/Copy";
 
 import gsap from "gsap";
@@ -39,23 +39,29 @@ const MarqueeBanner = () => {
     <section className="marquee-banner" ref={marqueeBannerRef}>
       <div className="marquees">
         <div className="marquee-header marquee-header-1" ref={marquee1Ref}>
-          <h1>Transmission lost in neutral space</h1>
+          <h1>Heritage in motion</h1>
         </div>
         <div className="marquee-header marquee-header-2" ref={marquee2Ref}>
-          <h1>Synthetic forms archive the signal</h1>
+          <h1>Where culture meets couture</h1>
         </div>
       </div>
       <div className="banner">
         <div className="banner-content">
           <Copy type="flicker">
-            <p>[ Frame Shift ]</p>
+            <p>[ The Collection ]</p>
           </Copy>
           <Copy>
-            <h4>For the Rich Aunties</h4>
+            <h4>For the Discerning</h4>
           </Copy>
         </div>
         <div className="banner-img">
-          <img src="/marquee-banner/marquee_banner_01.png" alt="" />
+          <Image
+            src="/marquee-banner/marquee_banner_01.png"
+            alt=""
+            width={1200}
+            height={600}
+            sizes="(max-width: 768px) 100vw, 80vw"
+          />
         </div>
         <div className="banner-logo">
           <h5>Be my Bu</h5>

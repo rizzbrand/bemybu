@@ -270,3 +270,9 @@ export const products = [
   //     "Minimal black utility form with adaptive paneling and neutral drift construction—designed for seamless integration across environments.",
   // },
 ];
+
+export const getProductSlug = (product) =>
+  product.name.toLowerCase().replace(/\s+/g, "-");
+
+export const getProductBySlug = (slug) =>
+  products.find((p) => getProductSlug(p) === slug);

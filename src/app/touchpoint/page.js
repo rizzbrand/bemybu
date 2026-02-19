@@ -1,7 +1,7 @@
 "use client";
 import "./touchpoint.css";
 import { useRef, useEffect } from "react";
-
+import Image from "next/image";
 import Copy from "@/components/Copy/Copy";
 import BrandIcon from "@/components/BrandIcon/BrandIcon";
 
@@ -66,31 +66,37 @@ export default function Touchpoint() {
           <div className="contact-hero-col contact-hero-copy">
             <div className="contact-header">
               <Copy animateOnScroll={false} delay={0.75}>
-                <h3>Outbound access is limited, proceed with intent.</h3>
+                <h3>Private access for discerning clients.</h3>
               </Copy>
             </div>
             <div className="contact-meta">
               <div className="contact-meta-block">
                 <Copy animateOnScroll={false} delay={0.9}>
-                  <p className="bodyCopy">External Comms Protocol</p>
+                  <p className="bodyCopy">General Inquiries</p>
                 </Copy>
                 <Copy animateOnScroll={false} delay={1}>
-                  <h4>echo@nrmlss.co</h4>
+                  <h4>hello@bubu.com</h4>
                 </Copy>
               </div>
               <div className="contact-meta-block">
                 <Copy animateOnScroll={false} delay={1.1}>
-                  <p className="bodyCopy">Dispatch Inquiry System</p>
+                  <p className="bodyCopy">Private Client Services</p>
                 </Copy>
                 <Copy animateOnScroll={false} delay={1.2}>
-                  <h4>dispatch@nrmlss.co</h4>
+                  <h4>reserve@bubu.com</h4>
                 </Copy>
               </div>
             </div>
           </div>
           <div className="contact-hero-col contact-hero-img-wrapper">
             <div className="contact-hero-img" ref={contactHeroImgRef}>
-              <img src="/contact/hero.png" alt="" />
+              <Image
+                src="/contact/hero.png"
+                alt=""
+                width={800}
+                height={600}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
@@ -104,15 +110,21 @@ export default function Touchpoint() {
             </div>
             <Copy type="flicker">
               <p>
-                Get early signals, private releases, and occasional noise worth
-                hearing. You'll know when it matters.
+                Exclusive previews, private fittings, and first access to new
+                collections. Reserved for our most valued clients.
               </p>
             </Copy>
             <Copy>
-              <h1>Connect to the silent grid</h1>
+              <h1>Join the inner circle</h1>
             </Copy>
             <div className="contact-callout-img">
-              <img src="/contact/contact-callout.jpg" alt="" />
+              <Image
+                src="/contact/contact-callout.jpg"
+                alt=""
+                width={1200}
+                height={600}
+                sizes="(max-width: 768px) 100vw, 80vw"
+              />
             </div>
           </div>
         </div>

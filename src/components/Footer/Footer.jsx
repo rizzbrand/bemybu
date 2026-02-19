@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             <div className="footer-col">
               <div className="footer-col-header">
-                <p className="bodyCopy">Connect Feed</p>
+                <p className="bodyCopy">Connect</p>
               </div>
               <div className="footer-col-links">
                 <a
@@ -46,19 +46,19 @@ const Footer = () => {
             </div>
             <div className="footer-col">
               <div className="footer-col-header">
-                <p className="bodyCopy">Open Line</p>
+                <p className="bodyCopy">Atelier</p>
               </div>
               <div className="footer-col-links">
-                <p>Unit 07, Sector N</p>
-                <p>Layer 2, South Terminal</p>
-                <p>System 021, Earth</p>
+                <p>By appointment only</p>
+                <p>Private viewings available</p>
+                <p>Worldwide delivery</p>
               </div>
             </div>
           </div>
           <div className="footer-row">
             <div className="footer-copyright">
-              <h5>Nrmlss</h5>
-              <p className="bodyCopy">&copy;2025 All modules reserved.</p>
+              <h5>Be Bu</h5>
+              <p className="bodyCopy">&copy;2025 All rights reserved.</p>
               {/* <p className="bodyCopy" id="copyright-text">
                 Built by Codegrid
               </p> */}

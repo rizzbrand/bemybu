@@ -2,6 +2,7 @@
 import "./home.css";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { products } from "./wardrobe/products";
 import Preloader, { isInitialLoad } from "@/components/Preloader/Preloader";
@@ -75,12 +76,20 @@ export default function Index() {
         <div className="container">
           <div className="hero-header" ref={heroHeaderRef}>
             <Copy animateOnScroll={false} delay={isInitialLoad ? 5.5 : 0.65}>
-              <h1>Silhouettes for the Next Era</h1>
+              <h1>West African Elegance, Reimagined</h1>
             </Copy>
           </div>
         </div>
         <div className="hero-img" ref={heroImgRef}>
-          <img src="/home/hero.png" alt="" />
+          <Image
+            src="/home/hero.png"
+            alt=""
+            width={1920}
+            height={1080}
+            sizes="100vw"
+            priority
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
         <div className="section-footer">
           <Copy
@@ -88,14 +97,14 @@ export default function Index() {
             delay={isInitialLoad ? 7.5 : 0.65}
             animateOnScroll={false}
           >
-            <p>Void Index</p>
+            <p>Be Bu</p>
           </Copy>
           <Copy
             type="flicker"
             delay={isInitialLoad ? 7.5 : 0.65}
             animateOnScroll={false}
           >
-            <p>Model v.23</p>
+            <p>Curated Collection</p>
           </Copy>
         </div>
       </section>
@@ -104,12 +113,12 @@ export default function Index() {
         <div className="container">
           <div className="about-copy">
             <Copy type="flicker">
-              <p>Clothing reduced to pure signal</p>
+              <p>Crafted for those who wear heritage with intention</p>
             </Copy>
             <Copy>
               <h3>
-                Our collections are built for the frictionless, the fast, and
-                the quietly defiant.
+                Timeless silhouettes for the discerning few. Each piece honors
+                tradition while embracing refined luxury.
               </h3>
             </Copy>
             {/* <div className="about-icon">
@@ -119,7 +128,7 @@ export default function Index() {
         </div>
         <div className="section-footer light">
           <Copy type="flicker">
-            <p>/ Core State /</p>
+            <p>/ Heritage & Craft /</p>
           </Copy>
         </div>
       </section>
@@ -128,11 +137,11 @@ export default function Index() {
         <div className="container">
           <div className="featured-products-header">
             <Copy type="flicker">
-              <p>Featured Units</p>
+              <p>Curated Collection</p>
             </Copy>
             <Copy>
               <h3>
-                Selected <br /> Garments
+                Exclusive <br /> Pieces
               </h3>
             </Copy>
           </div>
@@ -140,7 +149,7 @@ export default function Index() {
             <div className="featured-products-divider"></div>
             <div className="featured-products-labels">
               <Copy type="flicker">
-                <p>Primary Set</p>
+                <p>Editor&apos;s Picks</p>
               </Copy>
               <Copy type="flicker">
                 <Link href="/wardrobe">View Wardrobe</Link>

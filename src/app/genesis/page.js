@@ -1,7 +1,7 @@
 "use client";
 import "./genesis.css";
 import { useRef } from "react";
-
+import Image from "next/image";
 import Copy from "@/components/Copy/Copy";
 import TextBlock from "@/components/TextBlock/TextBlock";
 import BrandIcon from "@/components/BrandIcon/BrandIcon";
@@ -62,57 +62,57 @@ export default function Genesis() {
         <div className="project-preview-wrapper">
           <div className="preview-col">
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_03.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_03.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_06.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_06.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_09.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_09.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
           </div>
           <div className="preview-col">
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_01.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_01.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_04.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_04.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_07.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_07.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
           </div>
           <div className="preview-col main-preview-col">
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_02.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_02.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
             <div className="preview-img main-preview-img">
-              <img src="/spotlight/spotlight_img_05.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_05.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_08.jpg" alt="" />
-            </div>
-          </div>
-          <div className="preview-col">
-            <div className="preview-img">
-              <img src="/spotlight/spotlight_img_03.jpg" alt="" />
-            </div>
-            <div className="preview-img">
-              <img src="/spotlight/spotlight_img_06.jpg" alt="" />
-            </div>
-            <div className="preview-img">
-              <img src="/spotlight/spotlight_img_09.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_08.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
           </div>
           <div className="preview-col">
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_01.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_03.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_04.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_06.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
             <div className="preview-img">
-              <img src="/spotlight/spotlight_img_07.jpg" alt="" />
+              <Image src="/spotlight/spotlight_img_09.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
+            </div>
+          </div>
+          <div className="preview-col">
+            <div className="preview-img">
+              <Image src="/spotlight/spotlight_img_01.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
+            </div>
+            <div className="preview-img">
+              <Image src="/spotlight/spotlight_img_04.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
+            </div>
+            <div className="preview-img">
+              <Image src="/spotlight/spotlight_img_07.jpg" alt="" width={400} height={500} sizes="(max-width: 900px) 33vw, 200px" />
             </div>
           </div>
         </div>
@@ -120,37 +120,45 @@ export default function Genesis() {
 
       <section className="genesis-hero">
         <div className="gen-hero-img">
-          <img src="/genesis/hero.jpg" alt="" />
+          <Image
+            src="/genesis/hero.jpg"
+            alt=""
+            width={1920}
+            height={1080}
+            sizes="100vw"
+            priority
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
         <div className="container">
           <div className="gen-hero-copy">
             <Copy animateOnScroll={false} delay={0.7} type="flicker">
-              <p>Signal over surplus,</p>
-              <p>Fragments of identity,</p>
-              <p>Minimal by necessity.</p>
+              <p>Heritage over excess,</p>
+              <p>Tradition refined,</p>
+              <p>Luxury by design.</p>
             </Copy>
           </div>
           <div className="gen-hero-copy">
             <Copy animateOnScroll={false} delay={0.8} type="flicker">
-              <p>We design future forms,</p>
-              <p>Built for the now.</p>
+              <p>We craft timeless forms,</p>
+              <p>Built for the few.</p>
             </Copy>
           </div>
           <div className="gen-hero-copy">
             <Copy animateOnScroll={false} delay={0.7}>
-              <h1>The Genesis behind what you wear</h1>
+              <h1>The story behind every stitch</h1>
             </Copy>
             <div className="gen-hero-meta">
               <div className="gen-hero-meta-block">
                 <Copy animateOnScroll={false} delay={0.9} type="flicker">
-                  <p>We create frameworks,</p>
-                  <p>For the unnamed future,</p>
-                  <p>A study in silhouette.</p>
+                  <p>We honor the bubu,</p>
+                  <p>Reimagined for the modern connoisseur,</p>
+                  <p>A study in elegance.</p>
                 </Copy>
               </div>
               <div className="gen-hero-meta-block">
                 <Copy animateOnScroll={false} delay={1} type="flicker">
-                  <p>[ SYS/NRMLSS/0001 ]</p>
+                  <p>[ BE BU / 0001 ]</p>
                 </Copy>
               </div>
             </div>
@@ -166,19 +174,19 @@ export default function Genesis() {
           <div className="genesis-about-copy">
             <Copy>
               <h4>
-                NRMLSS is built on the belief that clothing should operate like
-                a system. Every piece is engineered with intention, shaped by
-                visual logic and designed for a new kind of uniform. We define
-                motion, structure in silence, presence without noise.
+                Be Bu is built on the belief that heritage deserves refinement.
+                Every piece honors the bubu tradition—loose, flowing, dignified—
+                while elevating it for the discerning client. We define luxury
+                through restraint, craft through intention, presence through
+                understatement.
               </h4>
             </Copy>
             <Copy>
               <h4 delay={0.5}>
-                Our aesthetic roots lie in the future, not the past. We create
-                garments that behave like interfaces: minimal, intelligent,
-                quietly expressive. Function and form are synchronized, tailored
-                for those who move through digital and physical layers with
-                equal precision. NRMLSS is not fashion. It is a transmission.
+                Our roots lie in West African elegance, reimagined for those who
+                appreciate the rare. Each garment is crafted with the finest
+                materials, designed for comfort and distinction. Be Bu is not
+                merely fashion. It is a legacy, reserved for the few.
               </h4>
             </Copy>
           </div>

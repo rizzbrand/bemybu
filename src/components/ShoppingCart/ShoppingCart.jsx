@@ -1,7 +1,7 @@
 "use client";
 import "./ShoppingCart.css";
 import { useState, useEffect } from "react";
-
+import Image from "next/image";
 import { products } from "@/app/wardrobe/products";
 import { useCartStore, useCartCount, useCartSubtotal } from "@/store/cartStore";
 
@@ -78,9 +78,12 @@ const ShoppingCart = () => {
                 return (
                   <div key={`${item.name}-${index}`} className="cart-item">
                     <div className="cart-item-image">
-                      <img
+                      <Image
                         src={`/products/product_${productIndex}.png`}
                         alt={item.name}
+                        width={120}
+                        height={160}
+                        sizes="120px"
                       />
                     </div>
                     <div className="cart-item-details">

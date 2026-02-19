@@ -1,7 +1,7 @@
 "use client";
 import "./PeelReveal.css";
 import { useRef, useEffect } from "react";
-
+import Image from "next/image";
 import Copy from "../Copy/Copy";
 
 import { gsap } from "gsap";
@@ -139,25 +139,25 @@ const PeelReveal = () => {
         </div>
         <div className="peel-reveal-img-container">
           <div className="pr-img">
-            <img src="/peel-reveal/peel-reveal-img.jpg" alt="Peel reveal" />
+            <Image src="/peel-reveal/peel-reveal-img.jpg" alt="Peel reveal" width={1200} height={800} sizes="100vw" />
           </div>
           <div className="pr-img mask">
-            <img src="/peel-reveal/peel-reveal-img.jpg" alt="" />
+            <Image src="/peel-reveal/peel-reveal-img.jpg" alt="" width={1200} height={800} sizes="100vw" />
           </div>
           <div className="pr-img mask">
-            <img src="/peel-reveal/peel-reveal-img.jpg" alt="" />
+            <Image src="/peel-reveal/peel-reveal-img.jpg" alt="" width={1200} height={800} sizes="100vw" />
           </div>
           <div className="pr-img mask">
-            <img src="/peel-reveal/peel-reveal-img.jpg" alt="" />
+            <Image src="/peel-reveal/peel-reveal-img.jpg" alt="" width={1200} height={800} sizes="100vw" />
           </div>
           <div className="pr-img mask">
-            <img src="/peel-reveal/peel-reveal-img.jpg" alt="" />
+            <Image src="/peel-reveal/peel-reveal-img.jpg" alt="" width={1200} height={800} sizes="100vw" />
           </div>
           <div className="pr-img mask">
-            <img src="/peel-reveal/peel-reveal-img.jpg" alt="" />
+            <Image src="/peel-reveal/peel-reveal-img.jpg" alt="" width={1200} height={800} sizes="100vw" />
           </div>
           <div className="pr-img mask">
-            <img src="/peel-reveal/peel-reveal-img.jpg" alt="" />
+            <Image src="/peel-reveal/peel-reveal-img.jpg" alt="" width={1200} height={800} sizes="100vw" />
           </div>
           <div className="peel-reveal-header">
             <h1>The uniform holds no allegiance</h1>

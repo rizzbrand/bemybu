@@ -70,7 +70,7 @@ export default function Wardrobe() {
       <section className="products-header">
         <div className="container">
           <Copy animateOnScroll={false} delay={0.65}>
-            <h1>Wardrobe Circulation</h1>
+            <h1>The Collection</h1>
           </Copy>
           <div className="products-header-divider"></div>
           <div className="product-filter-bar">

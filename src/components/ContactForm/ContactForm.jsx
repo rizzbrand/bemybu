@@ -6,20 +6,20 @@ const ContactForm = () => {
   return (
     <section className="contact-form">
       <div className="contact-parallax-image-wrapper">
-        <h1>BMYBU</h1>
+        <h1>BE BU</h1>
         {/* <img src="/contact-form/contact-parallax.png" alt="" /> */}
       </div>
       <div className="contact-form-container">
         <div className="cf-header">
-          <h4>Transmit updates, not noise.</h4>
+          <h4>Join our private mailing list.</h4>
         </div>
         <div className="cf-copy">
           <p className="bodyCopy sm">
-            You’ll only hear from us when something built is worth showing.
+            You’ll Exclusive previews and first access to new collections. Reserved for our most valued clients.
           </p>
         </div>
         <div className="cf-input">
-          <input type="text" placeholder="Enter Signal Address" />
+          <input type="text" placeholder="Enter your email" />
         </div>
         <div className="cf-submit">
           <MdOutlineArrowOutward />
@@ -28,7 +28,7 @@ const ContactForm = () => {
           <div className="cf-divider"></div>
           <div className="cf-footer-copy">
             <p className="bodyCopy sm">
-              No marketing cycles. Just rare, coded dispatches.
+              No marketing cycles. Just rare, curated dispatches.
             </p>
           </div>
         </div>

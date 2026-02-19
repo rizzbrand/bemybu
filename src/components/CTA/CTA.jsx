@@ -2,7 +2,7 @@
 import "./CTA.css";
 import { useRef, useEffect } from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 import Copy from "../Copy/Copy";
 
 import { gsap } from "gsap";
@@ -60,13 +60,19 @@ const CTA = () => {
       <div className="container">
         <div className="cta-col">
           <div className="cta-side-img">
-            <img src="/cta/cta_img_01.jpg" alt="" />
+            <Image
+              src="/cta/cta_img_01.jpg"
+              alt=""
+              width={400}
+              height={600}
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
           </div>
           <div className="cta-col-copy">
             <Copy>
               <p className="bodyCopy sm">
-                Built to exist outside context, these forms prioritize
-                neutrality, and distortion.
+                Each piece is crafted for those who appreciate heritage,
+                refinement, and understated luxury.
               </p>
             </Copy>
           </div>
@@ -74,16 +80,28 @@ const CTA = () => {
         <div className="cta-col">
           <div className="cta-header">
             <Copy>
-              <h3>A field test in silhouettes</h3>
+              <h3>Reserve your place in the collection</h3>
             </Copy>
           </div>
           <div className="cta-main-img">
-            <img src="/cta/cta_img_02.jpg" alt="" />
+            <Image
+              src="/cta/cta_img_02.jpg"
+              alt=""
+              width={800}
+              height={600}
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
         </div>
         <div className="cta-col">
           <div className="cta-side-img">
-            <img src="/cta/cta_img_03.jpg" alt="" />
+            <Image
+              src="/cta/cta_img_03.jpg"
+              alt=""
+              width={400}
+              height={600}
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
           </div>
         </div>
       </div>
@@ -91,7 +109,7 @@ const CTA = () => {
         <div className="cta-main-copy">
           <div className="btn">
             <Copy type="flicker">
-              <Link href="/wardrobe">Enter Wardrobe</Link>
+              <Link href="/wardrobe">Discover the Collection</Link>
             </Copy>
           </div>
         </div>

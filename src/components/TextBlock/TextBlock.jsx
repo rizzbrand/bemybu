@@ -9,7 +9,7 @@ const TextBlock = () => {
       <div className="container">
         <div className="text-block-col">
           <Copy>
-            <h3>Designed absence, engineered silence.</h3>
+            <h3>Designed for quiet distinction.</h3>
           </Copy>
           <div className="text-block-logo">
             <BrandIcon />
@@ -19,18 +19,19 @@ const TextBlock = () => {
           <div className="text-block-copy">
             <Copy>
               <p className="bodyCopy sm">
-                Designed for quiet tension. Built on structure, not spectacle.
-                Each piece functions with intent, nothing more. Neutral in tone,
-                deliberate in volume, uniform for moving through static.
+                Designed for those who value understated luxury. Built on
+                heritage and craft, each piece honors the bubu tradition while
+                embracing refined elegance. Timeless in silhouette, deliberate in
+                detail.
               </p>
             </Copy>
           </div>
           <div className="text-block-copy">
             <Copy>
               <p className="bodyCopy sm">
-                No ornament. No history. Just form engineered to remain.
-                Indifferent to season, untouched by noise. Modular in cut,
-                detached in presence. A system for those who exit the frame.
+                No excess. Only intention. Each garment is crafted to endure—
+                indifferent to passing trends, untouched by noise. Flowing in cut,
+                dignified in presence. A collection for those who wear legacy.
               </p>
             </Copy>
           </div>
