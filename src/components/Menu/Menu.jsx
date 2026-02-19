@@ -326,13 +326,13 @@ const Menu = () => {
               >
                 <h4>Wardrobe</h4>
               </Link>
-              <Link
+              {/* <Link
                 href="/genesis"
                 className="menu-main-link"
                 onClick={handleLinkClick}
               >
                 <h4>Genesis</h4>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="menu-overlay-col menu-overlay-col-lg">
