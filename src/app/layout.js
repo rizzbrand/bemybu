@@ -28,8 +28,8 @@ const dmMono = DM_Mono({
 });
 
 export const metadata = {
-  title: "NRMLSS | Codegrid",
-  description: "MWT by Codegrid",
+  title: "BeMyBu | Store",
+  description: "BuBu Store",
 };
 
 export default function RootLayout({ children }) {
