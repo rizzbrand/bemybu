@@ -22,9 +22,19 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const PRODUCT_COLORS = [
+  { name: "All", value: null },
+  { name: "Black", value: "Black" },
+  { name: "Stone", value: "Stone" },
+  { name: "Ice", value: "Ice" },
+  { name: "Grey", value: "Grey" },
+  { name: "White", value: "White" },
+];
+
 export default function Index() {
   const [loaderAnimating, setLoaderAnimating] = useState(isInitialLoad);
   const [featuredProducts, setFeaturedProducts] = useState([]);
+  const [selectedColor, setSelectedColor] = useState(null);
   const heroImgRef = useRef(null);
   const heroHeaderRef = useRef(null);
   const heroSectionRef = useRef(null);
@@ -34,9 +44,14 @@ export default function Index() {
   };
 
   useEffect(() => {
-    const shuffled = [...products].sort(() => 0.5 - Math.random());
-    setFeaturedProducts(shuffled.slice(0, 4));
-  }, []);
+    if (selectedColor) {
+      const filtered = products.filter((p) => p.color === selectedColor);
+      setFeaturedProducts(filtered);
+    } else {
+      const shuffled = [...products].sort(() => 0.5 - Math.random());
+      setFeaturedProducts(shuffled.slice(0, 4));
+    }
+  }, [selectedColor]);
 
   useGSAP(() => {
     if (!heroImgRef.current || !heroHeaderRef.current) return;
@@ -155,16 +170,38 @@ export default function Index() {
                 <Link href="/wardrobe">View Wardrobe</Link>
               </Copy>
             </div>
+            <div className="featured-products-color-palette">
+              <p className="featured-products-color-label">Filter by color</p>
+              <div className="featured-products-color-swatches">
+                {PRODUCT_COLORS.map(({ name, value }) => (
+                  <button
+                    key={name}
+                    type="button"
+                    className={`featured-color-swatch ${value ? value.toLowerCase() : "all"} ${selectedColor === value ? "active" : ""}`}
+                    onClick={() => setSelectedColor(value)}
+                    title={name}
+                    aria-label={`Filter by ${name}`}
+                  >
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
           <div className="featured-products-list">
-            {featuredProducts.map((product) => (
-              <Product
-                key={product.name}
-                product={product}
-                productIndex={products.indexOf(product) + 1}
-                showAddToCart={true}
-              />
-            ))}
+            {featuredProducts.length > 0 ? (
+              featuredProducts.map((product) => (
+                <Product
+                  key={product.name}
+                  product={product}
+                  productIndex={products.indexOf(product) + 1}
+                  showAddToCart={true}
+                />
+              ))
+            ) : (
+              <p className="featured-products-empty">
+                No pieces available in this color. Try another.
+              </p>
+            )}
           </div>
         </div>
       </section>

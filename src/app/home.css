@@ -133,11 +133,99 @@
   color: var(--base-700);
 }
 
+.featured-products-color-palette {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.featured-products-color-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--base-500);
+  font-family: var(--font-dm-mono), monospace;
+}
+
+.featured-products-color-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.featured-color-swatch {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--base-300);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-color-swatch:hover {
+  transform: scale(1.1);
+}
+
+.featured-color-swatch.active {
+  border-width: 2px;
+  border-color: var(--base-700);
+  box-shadow: 0 0 0 2px var(--base-100);
+}
+
+.featured-color-swatch.all {
+  background: linear-gradient(
+    135deg,
+    #121212 0%,
+    #121212 20%,
+    #a49e91 20%,
+    #a49e91 40%,
+    #bfc4cb 40%,
+    #bfc4cb 60%,
+    #686868 60%,
+    #686868 80%,
+    #ffffff 80%,
+    #ffffff 100%
+  );
+}
+
+.featured-color-swatch.black {
+  background-color: #121212;
+}
+
+.featured-color-swatch.stone {
+  background-color: #a49e91;
+}
+
+.featured-color-swatch.ice {
+  background-color: #bfc4cb;
+}
+
+.featured-color-swatch.grey {
+  background-color: #686868;
+}
+
+.featured-color-swatch.white {
+  background-color: #ffffff;
+  border-color: var(--base-300);
+}
+
 .featured-products .featured-products-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.featured-products-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--base-500);
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1024px) {
